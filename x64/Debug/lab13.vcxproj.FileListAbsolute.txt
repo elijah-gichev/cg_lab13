@@ -1,0 +1,12 @@
+C:\dev\cg\cg_lab13\x64\Debug\lab13.vcxproj.CopyComplete
+C:\dev\cg\cg_lab13\x64\Debug\lab13.exe
+C:\dev\cg\cg_lab13\x64\Debug\glew32d.dll
+C:\dev\cg\cg_lab13\x64\Debug\sfml-graphics-d-2.dll
+C:\dev\cg\cg_lab13\x64\Debug\sfml-window-d-2.dll
+C:\dev\cg\cg_lab13\x64\Debug\sfml-system-d-2.dll
+C:\dev\cg\cg_lab13\x64\Debug\freetyped.dll
+C:\dev\cg\cg_lab13\x64\Debug\zlibd1.dll
+C:\dev\cg\cg_lab13\x64\Debug\bz2d.dll
+C:\dev\cg\cg_lab13\x64\Debug\libpng16d.dll
+C:\dev\cg\cg_lab13\x64\Debug\brotlidec.dll
+C:\dev\cg\cg_lab13\x64\Debug\brotlicommon.dll
