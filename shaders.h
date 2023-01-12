@@ -4,8 +4,8 @@ const char* VertexShaderSource = R"(
 in vec3 coord;
 in vec2 uv;
 out vec2 texcoord;
-flat out int index;
-uniform mat4 veiw_point;
+flat out int index; // отключаем интерпол€цию дл€ индекса
+uniform mat4 view_point;
 uniform vec4 offsets[10];
 
 mat4 rotateX( in float angle ) {
@@ -36,7 +36,7 @@ void main() {
 	float rot_sun = offsets[gl_InstanceID].w;
 	vec4 pos = rotateY(rot_axis) * vec4(coord * scale * 2, 1.0);
     pos = rotateY(rot_sun) * (pos + vec4(offset, 0.0, 0.0, 0.0));
-    gl_Position = veiw_point * pos;
+    gl_Position = view_point * pos;
 	texcoord = uv;
 	index = gl_InstanceID;
 })";

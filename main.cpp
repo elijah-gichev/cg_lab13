@@ -161,14 +161,14 @@ void Rotate()
 {
 	for (int i = 0; i < offsets.size(); i++)
 	{
-		offsets[i].z = fmod(offsets[i].z + speeds_axis[i], 2 * M_PI);
-		offsets[i].w = fmod(offsets[i].w + speeds[i], 2 * M_PI);
+		offsets[i].z = fmod(offsets[i].z + speeds_axis[i], 2 * M_PI); // по своей оси
+		offsets[i].w = fmod(offsets[i].w + speeds[i], 2 * M_PI);  // вокруг главного объекта
 	}
 }
 
 int main()
 {
-	sf::Window window(sf::VideoMode(1000, 1000), "человеки-пауки", sf::Style::Default, sf::ContextSettings(24));
+	sf::Window window(sf::VideoMode(1000, 1000), "cheloveki pauki", sf::Style::Default, sf::ContextSettings(24));
 	window.setVerticalSyncEnabled(true);
 	window.setActive(true);
 	glewInit(); 
@@ -238,7 +238,7 @@ int main()
 
 		}
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-		//Rotate();
+		Rotate();
 		Draw(window);
 		window.display(); 
 	}
@@ -341,7 +341,7 @@ void InitShader()
 
 	LoadAttrib(Program, A_vertex, "coord");
 	LoadAttrib(Program, A_uvs, "uv");
-	LoadUniform(Program, A_vp, "veiw_point");
+	LoadUniform(Program, A_vp, "view_point");
 	LoadUniform(Program, A_offsets, "offsets");
 	checkOpenGLerror();
 	glUseProgram(Program);

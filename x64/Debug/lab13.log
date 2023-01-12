@@ -14,10 +14,5 @@ C:\dev\cg\cg_lab13\main.cpp(164,22): warning C4244: =: преобразован�
           [
               T=float
           ]
-C:\dev\cg\cg_lab13\main.cpp(165,22): warning C4244: =: преобразование "double" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
 C:\dev\cg\cg_lab13\main.cpp(252,24): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
   lab13.vcxproj -> C:\dev\cg\cg_lab13\x64\Debug\lab13.exe
